@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TestProject.Elasticsearch.DataGenerator\TestProject.Elasticsearch.DataGenerator.csproj" />
     <ProjectReference Include="..\TestProject.Elasticsearch.Core\TestProject.Elasticsearch.Core.csproj" />
   </ItemGroup>
 

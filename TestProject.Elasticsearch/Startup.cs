@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using TestProject.Elasticsearch.Core.Elasticsearch;
+using TestProject.Elasticsearch.DataGenerator;
 using TestProject.Elasticsearch.Swagger;
 
 namespace TestProject.Elasticsearch
@@ -72,6 +73,7 @@ namespace TestProject.Elasticsearch
                 });
 
             services.AddElasticsearch(Configuration);
+            services.AddTextGenerator(" ", ".");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
